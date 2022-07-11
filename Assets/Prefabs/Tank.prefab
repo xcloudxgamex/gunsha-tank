@@ -128,6 +128,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5040544851110975169}
+  tankChildMeshes:
+  - {fileID: 4334874851556951539}
+  - {fileID: 4334874851556951541}
+  - {fileID: 4334874851556951547}
+  - {fileID: 4334874851556951537}
 --- !u!65 &501735247630716431
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ public class TankView : MonoBehaviour
     private float rotation;
     public Rigidbody rb;
 
+    public MeshRenderer[] tankChildMeshes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,5 +48,13 @@ public class TankView : MonoBehaviour
     {
         movement = Input.GetAxis("Vertical");
         rotation = Input.GetAxis("Horizontal");
+    }
+
+    public void ChangeTankColor(Material color)
+    {
+        for(int i = 0; i<tankChildMeshes.Length; i++)
+        {
+            tankChildMeshes[i].material = color;
+        }
     }
 }
